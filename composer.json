@@ -14,6 +14,9 @@
         "neos/flow": "^5.0",
         "gregwar/captcha": "1.*"
     },
+    "replace": {
+	"lelesys/Lelesys.Captcha": "self.version"
+    },
     "autoload": {
         "psr-0": {
             "Lelesys\\Captcha": "Classes"
