@@ -15,7 +15,7 @@
         "gregwar/captcha": "1.*"
     },
     "replace": {
-	"lelesys/Lelesys.Captcha": "self.version"
+	"lelesys/captcha": "self.version"
     },
     "autoload": {
         "psr-0": {
