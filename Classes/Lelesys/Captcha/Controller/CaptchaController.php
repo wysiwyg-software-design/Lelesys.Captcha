@@ -33,6 +33,7 @@ class CaptchaController extends ActionController {
 	 */
 	public function captchaAction() {
 		$this->response->setHeader('Content-Type', 'image/jpeg');
+		$this->response->setHeader('Cache-Control', 'max-age=0, no-cache, no-store, must-revalidate');
 		$image = $this->captchaService->createCaptcha();
 		$this->response->setHeader('Content-Length', strlen($image));
 		echo $image;
